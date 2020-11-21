@@ -1,4 +1,4 @@
-    /*
+/*
 Theme Name: Stroud Community Agriculture
 Theme URI: https://alekscreative.com/
 Author: AleksCreative
@@ -19,7 +19,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
-    /*--------------------------------------------------------------
+
+
+/*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
@@ -43,1116 +45,1195 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-    /*--------------------------------------------------------------
+
+
+/*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-    
-    html {
-        font-family: sans-serif;
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-    }
-    
-    body {
-        margin: 0;
-    }
-    
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    main,
-    menu,
-    nav,
-    section,
-    summary {
-        display: block;
-    }
-    
-    audio,
-    canvas,
-    progress,
-    video {
-        display: inline-block;
-        vertical-align: baseline;
-    }
-    
-    audio:not([controls]) {
-        display: none;
-        height: 0;
-    }
-    
-    [hidden],
-    template {
-        display: none;
-    }
-    
-    a {
-        background-color: transparent;
-    }
-    
-    a:active,
-    a:hover {
-        outline: 0;
-    }
-    
-    abbr[title] {
-        border-bottom: 1px dotted;
-    }
-    
-    b,
-    strong {
-        font-weight: bold;
-    }
-    
-    dfn {
-        font-style: italic;
-    }
-    
-    h1 {
-        font-size: 2em;
-        margin: 0.67em 0;
-    }
-    
-    mark {
-        background: #ff0;
-        color: #000;
-    }
-    
-    small {
-        font-size: 80%;
-    }
-    
-    sub,
-    sup {
-        font-size: 75%;
-        line-height: 0;
-        position: relative;
-        vertical-align: baseline;
-    }
-    
-    sup {
-        top: -0.5em;
-    }
-    
-    sub {
-        bottom: -0.25em;
-    }
-    
-    img {
-        border: 0;
-    }
-    
-    svg:not(:root) {
-        overflow: hidden;
-    }
-    
-    figure {
-        margin: 1em 40px;
-    }
-    
-    hr {
-        box-sizing: content-box;
-        height: 0;
-    }
-    
-    pre {
-        overflow: auto;
-    }
-    
-    code,
-    kbd,
-    pre,
-    samp {
-        font-family: monospace, monospace;
-        font-size: 1em;
-    }
-    
-    button,
-    input,
-    optgroup,
-    select,
-    textarea {
-        color: inherit;
-        font: inherit;
-        margin: 0;
-    }
-    
-    button {
-        overflow: visible;
-    }
-    
-    button,
-    select {
-        text-transform: none;
-    }
-    
-    button,
-    html input[type="button"],
-    input[type="reset"],
-    input[type="submit"] {
-        -webkit-appearance: button;
-        cursor: pointer;
-    }
-    
-    button[disabled],
-    html input[disabled] {
-        cursor: default;
-    }
-    
-    button::-moz-focus-inner,
-    input::-moz-focus-inner {
-        border: 0;
-        padding: 0;
-    }
-    
-    input {
-        line-height: normal;
-    }
-    
-    input[type="checkbox"],
-    input[type="radio"] {
-        box-sizing: border-box;
-        padding: 0;
-    }
-    
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-        height: auto;
-    }
-    
-    input[type="search"]::-webkit-search-cancel-button,
-    input[type="search"]::-webkit-search-decoration {
-        -webkit-appearance: none;
-    }
-    
-    fieldset {
-        border: 1px solid #c0c0c0;
-        margin: 0 2px;
-        padding: 0.35em 0.625em 0.75em;
-    }
-    
-    legend {
-        border: 0;
-        padding: 0;
-    }
-    
-    textarea {
-        overflow: auto;
-    }
-    
-    optgroup {
-        font-weight: bold;
-    }
-    
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-    
-    td,
-    th {
-        padding: 0;
-    }
-    /*--------------------------------------------------------------
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+pre {
+    overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+optgroup {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+
+/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-    
-    body,
-    button,
-    input,
-    select,
-    textarea {
-        color: black;
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 16px;
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    
-    .site-content {
-        font-size: 1.125em;
-        line-height: 1.6em;
-    }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: 'Chelsea Market';
-        clear: both;
-        line-height: 1.3em;
-        margin-top: 2.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    h1 {
-        font-size: 2em;
-        color: #0d3279;
-    }
-    
-    h2 {
-        font-size: 1.8em;
-        color: #3f721f;
-    }
-    
-    h3 {
-        font-size: 1.7em;
-        color: #3f721f;
-    }
-    
-    h4 {
-        font-size: 1.6em;
-        color: #3f721f;
-    }
-    
-    h5 {
-        font-size: 1.5em;
-        color: #222222;
-    }
-    
-    h6 {
-        font-size: 1.4em;
-        color: #222222;
-    }
-    
-    p {
-        margin-bottom: 1.5em;
-        color: rgb(34, 34, 34);
-    }
-    
-    dfn,
-    cite,
-    em,
-    i {
-        font-style: italic;
-    }
-    
-    blockquote {
-        margin: 0 1.5em;
-    }
-    
-    address {
-        margin: 0 0 1.5em;
-    }
-    
-    pre {
-        background: #eee;
-        font-family: "Courier 10 Pitch", Courier, monospace;
-        font-size: 15px;
-        font-size: 0.9375rem;
-        line-height: 1.6;
-        margin-bottom: 1.6em;
-        max-width: 100%;
-        overflow: auto;
-        padding: 1.6em;
-    }
-    
-    code,
-    kbd,
-    tt,
-    var {
-        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-        font-size: 15px;
-        font-size: 0.9375rem;
-    }
-    
-    abbr,
-    acronym {
-        border-bottom: 1px dotted #666;
-        cursor: help;
-    }
-    
-    mark,
-    ins {
-        background: #fff9c0;
-        text-decoration: none;
-    }
-    
-    big {
-        font-size: 125%;
-    }
-    /*--------------------------------------------------------------
+
+body,
+button,
+input,
+select,
+textarea {
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.site-content {
+    font-size: 1.125em;
+    line-height: 1.6em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Chelsea Market';
+    clear: both;
+    line-height: 1.3em;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2em;
+    color: #0d3279;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #3f721f;
+}
+
+h3 {
+    font-size: 1.7em;
+    color: #3f721f;
+}
+
+h4 {
+    font-size: 1.6em;
+    color: #3f721f;
+}
+
+h5 {
+    font-size: 1.5em;
+    color: #222222;
+}
+
+h6 {
+    font-size: 1.4em;
+    color: #222222;
+}
+
+p {
+    margin-bottom: 1.5em;
+    color: rgb(34, 34, 34);
+}
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+blockquote {
+    margin: 0 1.5em;
+}
+
+address {
+    margin: 0 0 1.5em;
+}
+
+pre {
+    background: #eee;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 15px;
+    font-size: 0.9375rem;
+}
+
+abbr,
+acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+
+mark,
+ins {
+    background: #fff9c0;
+    text-decoration: none;
+}
+
+big {
+    font-size: 125%;
+}
+
+
+/*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-    
-    html {
-        box-sizing: border-box;
-    }
-    
-    *,
-    *:before,
-    *:after {
-        /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-        box-sizing: inherit;
-    }
-    
-    body {
-        background: #fff;
-        /* Fallback for when there is no custom background color defined. */
-    }
-    
-    blockquote:before,
-    blockquote:after,
-    q:before,
-    q:after {
-        content: "";
-    }
-    
-    blockquote,
-    q {
-        quotes: "" "";
-    }
-    
-    hr {
-        background-color: #ccc;
-        border: 0;
-        height: 1px;
-        margin-bottom: 1.5em;
-    }
-    
-    ul,
-    ol {
-        margin: 0 0 1.5em 3em;
-    }
-    
-    ul {
-        list-style: disc;
-        list-style-position: inside;
-    }
-    
-    ol {
-        list-style: decimal;
-    }
-    
-    li>ul,
-    li>ol {
-        margin-bottom: 0;
-        margin-left: 1.5em;
-    }
-    
-    dt {
-        font-weight: bold;
-    }
-    
-    dd {
-        margin: 0 1.5em 1.5em;
-    }
-    
-    img {
-        height: auto;
-        /* Make sure images are scaled correctly. */
-        max-width: 100%;
-        /* Adhere to container width. */
-    }
-    
-    figure {
-        margin: 1em 0;
-        /* Extra wide images within figure tags don't overflow the content area. */
-    }
-    
-    table {
-        margin: 0 0 1.5em;
-        width: 100%;
-    }
-    /*--------------------------------------------------------------
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    box-sizing: inherit;
+}
+
+body {
+    background: #fff;
+    /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+hr {
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+    margin: 0 0 1.5em 3em;
+}
+
+ul {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+ol {
+    list-style: decimal;
+}
+
+li>ul,
+li>ol {
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 1.5em 1.5em;
+}
+
+img {
+    height: auto;
+    /* Make sure images are scaled correctly. */
+    max-width: 100%;
+    /* Adhere to container width. */
+}
+
+figure {
+    margin: 1em 0;
+    /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+    margin: 0 0 1.5em;
+    width: 100%;
+}
+
+
+/*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-    
-    button,
-    input[type="button"],
-    input[type="reset"],
-    input[type="submit"] {
-        border: 1px solid;
-        border-color: #ccc #ccc #bbb;
-        border-radius: 3px;
-        background: #e6e6e6;
-        color: rgba(0, 0, 0, .8);
-        font-size: 12px;
-        font-size: 0.75rem;
-        line-height: 1;
-        padding: .6em 1em .4em;
-    }
-    
-    button:hover,
-    input[type="button"]:hover,
-    input[type="reset"]:hover,
-    input[type="submit"]:hover {
-        border-color: #ccc #bbb #aaa;
-    }
-    
-    button:focus,
-    input[type="button"]:focus,
-    input[type="reset"]:focus,
-    input[type="submit"]:focus,
-    button:active,
-    input[type="button"]:active,
-    input[type="reset"]:active,
-    input[type="submit"]:active {
-        border-color: #aaa #bbb #bbb;
-    }
-    
-    input[type="text"],
-    input[type="email"],
-    input[type="url"],
-    input[type="password"],
-    input[type="search"],
-    input[type="number"],
-    input[type="tel"],
-    input[type="range"],
-    input[type="date"],
-    input[type="month"],
-    input[type="week"],
-    input[type="time"],
-    input[type="datetime"],
-    input[type="datetime-local"],
-    input[type="color"],
-    textarea {
-        color: #666;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        padding: 3px;
-    }
-    
-    select {
-        border: 1px solid #ccc;
-    }
-    
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    input[type="url"]:focus,
-    input[type="password"]:focus,
-    input[type="search"]:focus,
-    input[type="number"]:focus,
-    input[type="tel"]:focus,
-    input[type="range"]:focus,
-    input[type="date"]:focus,
-    input[type="month"]:focus,
-    input[type="week"]:focus,
-    input[type="time"]:focus,
-    input[type="datetime"]:focus,
-    input[type="datetime-local"]:focus,
-    input[type="color"]:focus,
-    textarea:focus {
-        color: #111;
-    }
-    
-    textarea {
-        width: 100%;
-    }
-    /*--------------------------------------------------------------
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    border: 1px solid;
+    border-color: #ccc #ccc #bbb;
+    border-radius: 3px;
+    background: #e6e6e6;
+    color: rgba(0, 0, 0, .8);
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1;
+    padding: .6em 1em .4em;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    border-color: #ccc #bbb #aaa;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+    border-color: #aaa #bbb #bbb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+select {
+    border: 1px solid #ccc;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+    color: #111;
+}
+
+textarea {
+    width: 100%;
+}
+
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-    /*--------------------------------------------------------------
+
+
+/*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-    
-    a {
-        color: #3f721f;
-    }
-    
-    a:visited {
-        color: #3f721f;
-    }
-    
-    a:hover,
-    a:focus,
-    a:active {
-        color: #3c8824;
-    }
-    
-    a:focus {
-        outline: thin dotted;
-    }
-    
-    a:hover,
-    a:active {
-        outline: 0;
-    }
-    /*--------------------------------------------------------------
+
+a {
+    color: #3f721f;
+}
+
+a:visited {
+    color: #3f721f;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #3c8824;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+
+/*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-    
-    #main-nav ul li {
-        list-style: none;
-        line-height: 50px;
-    }
-    
-    #main-nav li a {
-        font-weight: bold;
-        font-size: 1.5em;
+
+#main-nav ul li {
+    list-style: none;
+    line-height: 50px;
+}
+
+#main-nav li a {
+    color: #cfd26e;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    height: 50px;
+    line-height: 45px;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+#main-nav ul {
+    margin: 0;
+    padding: 0;
+    /* only needed if you have not done a CSS reset */
+}
+
+@media screen and (min-width: 60.5em) {
+    #main-nav {
         height: 50px;
-        line-height: 45px;
-        padding: 0 20px;
-        text-decoration: none;
+        background-color: rgb(41, 41, 41);
+        padding: 0;
+        margin: 0 auto;
+        /* set to the height you want your menu to be */
     }
-    
-    #main-nav ul {
+    #main-nav li {
+        display: block;
+        float: left;
+        line-height: 50px;
+        /* this should be the same as your #main-nav height */
+        height: 50px;
+        /* this should be the same as your #main-nav height */
         margin: 0;
         padding: 0;
-        background-color: #ecf2d2;
-        /* only needed if you have not done a CSS reset */
+        /* only needed if you don't have a reset */
+        position: relative;
+        /* this is needed in order to position sub menus */
     }
-    
-    @media screen and (min-width: 50.5em) {
-        #main-nav {
-            height: 50px;
-            background-color: #ecf2d2;
-            /* set to the height you want your menu to be */
-        }
-        #main-nav li {
-            display: block;
-            float: left;
-            line-height: 50px;
-            /* this should be the same as your #main-nav height */
-            height: 50px;
-            /* this should be the same as your #main-nav height */
-            margin: 0;
-            padding: 0;
-            /* only needed if you don't have a reset */
-            position: relative;
-            /* this is needed in order to position sub menus */
-        }
-        #main-nav li a {
-            display: block;
-        }
-        /* First level sub menu */
-        #main-nav ul ul {
-            /* this targets all sub menus */
-            display: none;
-            /* hide all sub menus from view */
-            position: absolute;
-            top: 50px;
-            /* this should be the same height as the top level menu -- height + padding + borders */
-        }
-        #main-nav .current-menu-item a,
-        #main-nav .current_page_item a,
-        #main-nav a:hover {
-            color: #fff;
-            background: #3f721f;
-            text-decoration: underline;
-        }
-        #main-nav ul ul li {
-            /* this targets all submenu items */
-            float: none;
-            /* overwriting our float up above */
-            width: 250px;
-            /* set to the width you want your sub menus to be. This needs to match the value we set below */
-        }
-        #main-nav ul ul li a {
-            /* target all sub menu item links */
-            padding: 0;
-            text-align: left;
-            padding-left: 20px;
-            /* give our sub menu links a nice button feel */
-        }
-        #main-nav ul li:hover>ul {
-            display: block;
-            /* show sub menus when hovering over a parent */
-        }
-        /* Second and third levels of sumbenus */
-        #main-nav ul ul li ul {
-            /* target all second, third, and deeper level sub menus */
-            left: 250px;
-            /* this needs to match the sub menu width set above -- width + padding + borders */
-            top: 0;
-            /* this ensures the sub menu starts in line with its parent item */
-        }
-    }
-    /* Small menu. */
-    
-    @media screen and (min-width: 50.5em) {
-        .menu-toggle {
-            display: none;
-        }
-        .main-navigation ul {
-            display: inline-block;
-        }
-    }
-    
-    @media screen and (max-width: 50.5em) {
-        #main-nav ul {
-            display: none;
-        }
-        .menu-toggle,
-        #main-nav.toggled ul {
-            display: inline-block;
-        }
-        #main-nav ul {
-            float: right;
-        }
-        #main-nav ul li {
-            float: none;
-            width: 320px;
-        }
-        #main-nav ul ul {
-            position: relative;
-        }
-        #main-nav ul ul li {
-            display: inline-block;
-        }
-        #main-nav a:hover {
-            text-decoration: underline;
-        }
-    }
-    /* Menu button */
-    
-    button.menu-toggle {
-        border: none;
-        float: right;
-        font-size: 16px;
-        text-transform: uppercase;
-        font-weight: bold;
-        background-color: transparent;
-    }
-    /* Menu button bars */
-    
-    .container-x {
-        display: inline-block;
-        cursor: pointer;
-    }
-    
-    .bar1,
-    .bar2,
-    .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: #333;
-        margin: 6px 0;
-        -webkit-transition: 0.4s;
-        transition: 0.4s;
-    }
-    
-    .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
-    }
-    
-    .change .bar2 {
-        opacity: 0;
-    }
-    
-    .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
-    }
-    
-    .site-main .comment-navigation,
-    .site-main .posts-navigation,
-    .site-main .post-navigation {
-        margin: 0 0 1.5em;
-        overflow: hidden;
-    }
-    
-    .comment-navigation .nav-previous,
-    .posts-navigation .nav-previous,
-    .post-navigation .nav-previous {
-        float: left;
-        width: 50%;
-    }
-    
-    .comment-navigation .nav-next,
-    .posts-navigation .nav-next,
-    .post-navigation .nav-next {
-        float: right;
-        text-align: right;
-        width: 50%;
-    }
-    /* Footer navigation */
-    
-    .secondary-navigation ul li {
-        list-style: none;
-    }
-    /*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-    /* Text meant only for screen readers. */
-    
-    .screen-reader-text {
-        clip: rect(1px, 1px, 1px, 1px);
-        position: absolute !important;
-        height: 1px;
-        width: 1px;
-        overflow: hidden;
-        word-wrap: normal !important;
-        /* Many screen reader and browser combinations announce broken words as they would appear visually. */
-    }
-    
-    .screen-reader-text:focus {
-        background-color: #f1f1f1;
-        border-radius: 3px;
-        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-        clip: auto !important;
-        color: #21759b;
+    #main-nav li a {
         display: block;
-        font-size: 14px;
-        font-size: 0.875rem;
-        font-weight: bold;
-        height: auto;
-        left: 5px;
-        line-height: normal;
-        padding: 15px 23px 14px;
-        text-decoration: none;
-        top: 5px;
-        width: auto;
-        z-index: 100000;
-        /* Above WP toolbar. */
     }
-    /* Do not show the outline on the skip link target. */
-    
-    #content[tabindex="-1"]:focus {
-        outline: 0;
+    /* First level sub menu */
+    #main-nav ul ul {
+        background-color: #cfd26e;
+        /* this targets all sub menus */
+        display: none;
+        /* hide all sub menus from view */
+        position: absolute;
+        top: 50px;
+        /* this should be the same height as the top level menu -- height + padding + borders */
     }
-    /*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-    
-    .alignleft {
-        display: inline;
-        float: left;
-        margin-right: 1.5em;
-    }
-    
-    .alignright {
-        display: inline;
-        float: right;
-        margin-left: 1.5em;
-    }
-    
-    .aligncenter {
-        clear: both;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .flex-container {
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .flex-container-footer {
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-    }
-    /*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-    
-    .clear:before,
-    .clear:after,
-    .entry-content:before,
-    .entry-content:after,
-    .comment-content:before,
-    .comment-content:after,
-    .site-header:before,
-    .site-header:after,
-    .site-content:before,
-    .site-content:after,
-    .site-footer:before,
-    .site-footer:after {
-        content: "";
-        display: table;
-        table-layout: fixed;
-    }
-    
-    .clear:after,
-    .entry-content:after,
-    .comment-content:after,
-    .site-header:after,
-    .site-content:after,
-    .site-footer:after {
-        clear: both;
-    }
-    /*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-    
-    .site-header {
-        font-size: .8em;
-        line-height: 1em;
-        text-align: center;
-    }
-    
-    .site-description {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 1.5em;
-        line-height: 1.4em;
-    }
-    
-    .site-title {
-        font-family: 'Chelsea Market', sans-serif;
-        font-size: 2.6em;
-        line-height: 1em;
-        margin-bottom: 0;
-        color: #3f721f;
-    }
-    
-    .site-title a {
-        text-decoration: none;
-        color: inherit;
-    }
-    
-    .site-title a:hover,
-    .site-title a:focus {
-        color: #3c8824;
+    #main-nav .current-menu-item a,
+    #main-nav .current_page_item a,
+    #main-nav a:hover {
+        color: #fff;
+        background: #868832;
         text-decoration: underline;
     }
-    
+    #main-nav ul ul li {
+        /* this targets all submenu items */
+        float: none;
+        /* overwriting our float up above */
+        width: 250px;
+        /* set to the width you want your sub menus to be. This needs to match the value we set below */
+    }
+    #main-nav ul ul li a {
+        color: #666b11;
+        /* target all sub menu item links */
+        padding: 0;
+        text-transform: capitalize;
+        text-align: left;
+        padding-left: 20px;
+        /* give our sub menu links a nice button feel */
+    }
+    #main-nav ul li:hover>ul {
+        display: block;
+        /* show sub menus when hovering over a parent */
+    }
+    /* Second and third levels of sumbenus */
+    #main-nav ul ul li ul {
+        background-color: #cfd26e;
+        /* target all second, third, and deeper level sub menus */
+        left: 250px;
+        /* this needs to match the sub menu width set above -- width + padding + borders */
+        top: 0;
+        /* this ensures the sub menu starts in line with its parent item */
+    }
+}
+
+
+/* Small menu. */
+
+@media screen and (min-width: 60.5em) {
+    .menu-toggle {
+        display: none;
+    }
+    .main-navigation ul {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 60.5em) {
+    #main-nav ul {
+        display: none;
+        text-align: right;
+    }
+    #main-nav ul li a {
+        color: #ecf2d2;
+    }
+    .menu-toggle,
+    #main-nav.toggled ul {
+        display: inline-block;
+        background-color: #868832;
+        width: 320px;
+    }
+    #main-nav ul {
+        float: right;
+    }
+    #main-nav ul li {
+        width: 320px;
+        border-bottom: 1px solid #55590e;
+    }
+    #main-nav ul ul {
+        position: relative;
+    }
+    #main-nav ul ul li {
+        display: inline-block;
+        background-color: #55590e;
+        padding-right: 25px;
+        border-bottom: 1px solid #868832;
+    }
+    #main-nav ul ul li a {
+        text-transform: capitalize;
+    }
+    #main-nav a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+/* Menu button */
+
+button.menu-toggle {
+    width: 60px;
+    border: none;
+    float: right;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+
+/* Menu button bars */
+
+.container-x {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+    margin: 0 0 1.5em;
+    overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+    float: left;
+    width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+
+/* Footer navigation */
+
+.secondary-navigation ul li {
+    list-style: none;
+}
+
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+
+
+/* Do not show the outline on the skip link target. */
+
+#content[tabindex="-1"]:focus {
+    outline: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container-footer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+    clear: both;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.site-header {
+    font-size: .8em;
+    line-height: 1em;
+    text-align: center;
+}
+
+.site-description {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.4em;
+}
+
+.site-title {
+    font-family: 'Chelsea Market', sans-serif;
+    font-size: 2.6em;
+    line-height: 1em;
+    margin-bottom: 0;
+    color: #3f721f;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-title a:hover,
+.site-title a:focus {
+    color: #3c8824;
+    text-decoration: underline;
+}
+
+.site-branding {
+    margin: 1.8em;
+}
+
+.custom-logo-img img {
+    padding-top: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 30em) {
     .site-branding {
-        margin: 1.8em;
+        margin: 1em;
     }
-    
-    .custom-logo-img img {
-        padding-top: 20px;
-        margin-right: 20px;
+}
+
+@media screen and (min-width: 40em) {
+    .site-branding {
+        font-size: 1em;
     }
-    
-    @media screen and (min-width: 30em) {
-        .site-branding {
-            margin: 1em;
-        }
+}
+
+@media screen and (min-width: 57em) {
+    .site-branding {
+        max-width: 100em;
+        margin: 1.6em auto;
     }
-    
-    @media screen and (min-width: 40em) {
-        .site-branding {
-            font-size: 1em;
-        }
-    }
-    
-    @media screen and (min-width: 57em) {
-        .site-branding,
-        .main-navigation {
-            max-width: 100em;
-            margin: 1.6em auto;
-        }
-    }
-    /*--------------------------------------------------------------
+}
+
+
+/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-    
-    .widget {
-        margin: 0 0 1.5em;
-    }
-    /* Make sure select elements fit in widgets. */
-    
-    .widget select {
-        max-width: 100%;
-    }
-    /*--------------------------------------------------------------
+
+.widget {
+    margin: 0 0 1.5em;
+}
+
+
+/* Make sure select elements fit in widgets. */
+
+.widget select {
+    max-width: 100%;
+}
+
+
+/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-    /*--------------------------------------------------------------
+
+
+/*--------------------------------------------------------------
 ## Global
 --------------------------------------------------------------*/
-    
+
+.site-main,
+.site-info {
+    margin: 1.4em;
+    font-size: .8em;
+    line-height: 1.6em;
+}
+
+@media screen and (min-width: 30em) {
     .site-main,
     .site-info {
-        margin: 1.4em;
-        font-size: .8em;
-        line-height: 1.6em;
+        margin: 1.8em;
     }
-    
-    @media screen and (min-width: 30em) {
-        .site-main,
-        .site-info {
-            margin: 1.8em;
-        }
+}
+
+@media screen and (min-width: 40em) {
+    .site-main,
+    .site-info {
+        font-size: 1em;
+        margin: 1.6em;
     }
-    
-    @media screen and (min-width: 40em) {
-        .site-main,
-        .site-info {
-            font-size: 1em;
-            margin: 1.6em;
-        }
+}
+
+@media screen and (min-width: 57em) {
+    .site-main,
+    .site-info {
+        max-width: 70em;
+        margin: 1.8em auto;
     }
-    
-    @media screen and (min-width: 57em) {
-        .site-main,
-        .site-info {
-            max-width: 70em;
-            margin: 1.8em auto;
-        }
-    }
-    
-    .grass {
-        min-height: 59px;
-        background-image: url(./img/grass.png);
-        background-repeat: repeat-x;
-        background-position: top;
-    }
-    
-    .site-footer {
-        background-color: #868832;
-    }
-    
-    .site-footer,
-    .site-footer p,
-    .site-footer a {
-        color: #fff;
-    }
-    
-    .copyright,
-    .secondary-navigation a {
-        font-weight: bold;
-    }
-    /*--------------------------------------------------------------
+}
+
+.grass {
+    min-height: 59px;
+    background-image: url(./img/grass.png);
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+.site-footer {
+    background-color: #868832;
+}
+
+.site-footer,
+.site-footer p,
+.site-footer a {
+    color: #fff;
+}
+
+.copyright,
+.secondary-navigation a {
+    font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-    
-    .sticky {
-        display: block;
-    }
-    
-    .hentry {
-        margin: 0 0 1.5em;
-    }
-    
-    .byline,
-    .updated:not(.published) {
-        display: none;
-    }
-    
-    .single .byline,
-    .group-blog .byline {
-        display: inline;
-    }
-    
-    .page-content,
-    .entry-content,
-    .entry-summary {
-        margin: 1.5em 0 0;
-    }
-    
-    .page-links {
-        clear: both;
-        margin: 0 0 1.5em;
-    }
-    /*--------------------------------------------------------------
+
+.sticky {
+    display: block;
+}
+
+.hentry {
+    margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published) {
+    display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+    display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+    margin: 1.5em 0 0;
+}
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+
+/*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
-    
-    .comment-content a {
-        word-wrap: break-word;
-    }
-    
-    .bypostauthor {
-        display: block;
-    }
-    /*--------------------------------------------------------------
+
+.comment-content a {
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+
+/*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
-    /* Globally hidden elements when Infinite Scroll is supported and in use. */
-    
-    .infinite-scroll .posts-navigation,
-    /* Older / Newer Posts Navigation (always hidden) */
-    
-    .infinite-scroll.neverending .site-footer {
-        /* Theme Footer (when set to scrolling) */
-        display: none;
-    }
-    /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-    
-    .infinity-end.neverending .site-footer {
-        display: block;
-    }
-    /*--------------------------------------------------------------
+
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+
+.infinite-scroll .posts-navigation,
+
+/* Older / Newer Posts Navigation (always hidden) */
+
+.infinite-scroll.neverending .site-footer {
+    /* Theme Footer (when set to scrolling) */
+    display: none;
+}
+
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+
+.infinity-end.neverending .site-footer {
+    display: block;
+}
+
+
+/*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
-    
-    .page-content .wp-smiley,
-    .entry-content .wp-smiley,
-    .comment-content .wp-smiley {
-        border: none;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding: 0;
-    }
-    /* Make sure embeds and iframes fit their containers. */
-    
-    embed,
-    iframe,
-    object {
-        max-width: 100%;
-    }
-    /*--------------------------------------------------------------
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+
+/* Make sure embeds and iframes fit their containers. */
+
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+
+/*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
-    
-    .wp-caption {
-        margin-bottom: 1.5em;
-        max-width: 100%;
-    }
-    
-    .wp-caption img[class*="wp-image-"] {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .wp-caption .wp-caption-text {
-        margin: 0.8075em 0;
-    }
-    
-    .wp-caption-text {
-        text-align: center;
-    }
-    /*--------------------------------------------------------------
+
+.wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
-    
-    .gallery {
-        margin-bottom: 1.5em;
-    }
-    
-    .gallery-item {
-        display: inline-block;
-        text-align: center;
-        vertical-align: top;
-        width: 100%;
-    }
-    
-    .gallery-columns-2 .gallery-item {
-        max-width: 50%;
-    }
-    
-    .gallery-columns-3 .gallery-item {
-        max-width: 33.33%;
-    }
-    
-    .gallery-columns-4 .gallery-item {
-        max-width: 25%;
-    }
-    
-    .gallery-columns-5 .gallery-item {
-        max-width: 20%;
-    }
-    
-    .gallery-columns-6 .gallery-item {
-        max-width: 16.66%;
-    }
-    
-    .gallery-columns-7 .gallery-item {
-        max-width: 14.28%;
-    }
-    
-    .gallery-columns-8 .gallery-item {
-        max-width: 12.5%;
-    }
-    
-    .gallery-columns-9 .gallery-item {
-        max-width: 11.11%;
-    }
-    
-    .gallery-caption {
-        display: block;
-    }
+
+.gallery {
+    margin-bottom: 1.5em;
+}
+
+.gallery-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+    max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+    max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+    max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+    max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+    max-width: 11.11%;
+}
+
+.gallery-caption {
+    display: block;
+}

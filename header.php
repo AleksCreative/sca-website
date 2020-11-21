@@ -23,7 +23,17 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'sca-website' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner" >           
+	<header id="masthead" class="site-header" role="banner" >   
+		<nav id="main-nav" class="main-navigation" role="navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'sca-website' ); ?>
+			<div class="container-x" onclick="myFunction(this)">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+				</div>
+			</button>
+			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'container' => '' ) ); ?>
+		</nav><!-- #main-nav -->        
         
         <div class="site-branding flex-container">
             <div class="custom-logo-img"><?php the_custom_logo(); ?></div>
@@ -44,16 +54,7 @@
 		</div><!-- .site-branding -->		
 		
 
-		<nav id="main-nav" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'sca-website' ); ?>
-			<div class="container-x" onclick="myFunction(this)">
-				  <div class="bar1"></div>
-				  <div class="bar2"></div>
-				  <div class="bar3"></div>
-				</div>
-			</button>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'container' => '' ) ); ?>
-		</nav><!-- #main-nav -->
+		
 			<?php if (is_front_page()) { ?>
 <div class="header-image" ><img src="<?php echo esc_url( header_image() ) ?>" alt="Stroud Community Agriculture banner"> </div> 
 			<?php } else {} ?>

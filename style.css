@@ -290,7 +290,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Chelsea Market';
+    font-family: 'Junction';
     clear: both;
     line-height: 1.3em;
     margin-top: 2.5rem;
@@ -299,22 +299,22 @@ h6 {
 
 h1 {
     font-size: 2em;
-    color: #0d3279;
+    color: #4a74a0;
 }
 
 h2 {
     font-size: 1.8em;
-    color: #3f721f;
+    color: #666b11;
 }
 
 h3 {
     font-size: 1.7em;
-    color: #3f721f;
+    color: ##666b11;
 }
 
 h4 {
     font-size: 1.6em;
-    color: #3f721f;
+    color: #666b11;
 }
 
 h5 {
@@ -567,17 +567,17 @@ textarea {
 --------------------------------------------------------------*/
 
 a {
-    color: #3f721f;
+    color: #54590e;
 }
 
 a:visited {
-    color: #3f721f;
+    color: #54590e;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: #3c8824;
+    color: #54590e;
 }
 
 a:focus {
@@ -594,16 +594,29 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 
+.top-bar-main-container {
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(41, 41, 41);
+    box-shadow: 0 0 7px;
+}
+
+.top-bar-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 #main-nav ul li {
     list-style: none;
-    line-height: 50px;
+    line-height: 60px;
 }
 
 #main-nav li a {
     color: #cfd26e;
     text-transform: uppercase;
     font-size: 1.5em;
-    height: 50px;
+    height: 60px;
     line-height: 45px;
     padding: 0 20px;
     text-decoration: none;
@@ -612,23 +625,29 @@ a:active {
 #main-nav ul {
     margin: 0;
     padding: 0;
+    position: relative;
+    z-index: 1000;
     /* only needed if you have not done a CSS reset */
 }
 
-@media screen and (min-width: 60.5em) {
+ul.sub-menu {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 85.5em) {
     #main-nav {
-        height: 50px;
+        height: 100px;
         background-color: rgb(41, 41, 41);
         padding: 0;
-        margin: 0 auto;
+        margin: 0;
         /* set to the height you want your menu to be */
     }
     #main-nav li {
         display: block;
         float: left;
-        line-height: 50px;
+        line-height: 60px;
         /* this should be the same as your #main-nav height */
-        height: 50px;
+        height: 60px;
         /* this should be the same as your #main-nav height */
         margin: 0;
         padding: 0;
@@ -638,6 +657,8 @@ a:active {
     }
     #main-nav li a {
         display: block;
+        line-height: 100px;
+        height: 100px;
     }
     /* First level sub menu */
     #main-nav ul ul {
@@ -646,7 +667,6 @@ a:active {
         display: none;
         /* hide all sub menus from view */
         position: absolute;
-        top: 50px;
         /* this should be the same height as the top level menu -- height + padding + borders */
     }
     #main-nav .current-menu-item a,
@@ -664,6 +684,8 @@ a:active {
         /* set to the width you want your sub menus to be. This needs to match the value we set below */
     }
     #main-nav ul ul li a {
+        height: 60px;
+        line-height: 60px;
         color: #666b11;
         /* target all sub menu item links */
         padding: 0;
@@ -690,7 +712,7 @@ a:active {
 
 /* Small menu. */
 
-@media screen and (min-width: 60.5em) {
+@media screen and (min-width: 85.5em) {
     .menu-toggle {
         display: none;
     }
@@ -699,7 +721,10 @@ a:active {
     }
 }
 
-@media screen and (max-width: 60.5em) {
+@media screen and (max-width: 85.5em) {
+    .top-bar-container {
+        justify-content: space-between;
+    }
     #main-nav ul {
         display: none;
         text-align: right;
@@ -718,6 +743,7 @@ a:active {
     }
     #main-nav ul li {
         width: 320px;
+        background-color: #868832;
         border-bottom: 1px solid #55590e;
     }
     #main-nav ul ul {
@@ -743,7 +769,6 @@ a:active {
 button.menu-toggle {
     width: 60px;
     border: none;
-    float: right;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
@@ -763,7 +788,7 @@ button.menu-toggle {
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #cfd26e;
     margin: 6px 0;
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -934,7 +959,6 @@ button.menu-toggle {
 .site-header {
     font-size: .8em;
     line-height: 1em;
-    text-align: center;
 }
 
 .site-description {
@@ -944,11 +968,11 @@ button.menu-toggle {
 }
 
 .site-title {
-    font-family: 'Chelsea Market', sans-serif;
+    font-family: 'Junction', sans-serif;
     font-size: 2.6em;
     line-height: 1em;
     margin-bottom: 0;
-    color: #3f721f;
+    color: #54590e;
 }
 
 .site-title a {
@@ -963,18 +987,12 @@ button.menu-toggle {
 }
 
 .site-branding {
-    margin: 1.8em;
+    margin: 8px;
 }
 
 .custom-logo-img img {
-    padding-top: 20px;
-    margin-right: 20px;
-}
-
-@media screen and (min-width: 30em) {
-    .site-branding {
-        margin: 1em;
-    }
+    margin: 0;
+    float: left;
 }
 
 @media screen and (min-width: 40em) {
@@ -986,7 +1004,6 @@ button.menu-toggle {
 @media screen and (min-width: 57em) {
     .site-branding {
         max-width: 100em;
-        margin: 1.6em auto;
     }
 }
 

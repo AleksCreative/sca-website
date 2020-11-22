@@ -23,35 +23,43 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'sca-website' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner" >   
-		<nav id="main-nav" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'sca-website' ); ?>
-			<div class="container-x" onclick="myFunction(this)">
-				  <div class="bar1"></div>
-				  <div class="bar2"></div>
-				  <div class="bar3"></div>
-				</div>
-			</button>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'container' => '' ) ); ?>
-		</nav><!-- #main-nav -->        
-        
-        <div class="site-branding flex-container">
-            <div class="custom-logo-img"><?php the_custom_logo(); ?></div>
-			<div><?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                                
-			<?php
-			endif;
+	<header id="masthead" class="site-header" role="banner" >
+		<div class="top-bar-main-container">
+			<div class="top-bar-container">
+				<div class="site-branding ">
+					<div class="custom-logo-img"><?php the_custom_logo(); ?></div>
+					<div><?php
+					if ( is_front_page() && is_home() ) : ?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php else : ?>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+										
+					<?php
+					endif;
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?></div>
-		</div><!-- .site-branding -->		
+					$description = get_bloginfo( 'description', 'display' );
+					if ( $description || is_customize_preview() ) : ?>
+						<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+					<?php
+					endif; ?></div>
+				</div><!-- .site-branding -->
+				<div class="menu-container">	   
+					<nav id="main-nav" class="main-navigation" role="navigation">
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'sca-website' ); ?>
+						<div class="container-x" onclick="myFunction(this)">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+							</div>
+						</button>
+						
+							<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'container' => '' ) ); ?>
+						
+					</nav><!-- #main-nav -->   
+				</div>     
+			</div><!-- .top-bar-container -->
+		</div><!-- .top-bar-main-container -->
+        	
 		
 
 		

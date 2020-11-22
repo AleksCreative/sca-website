@@ -272,11 +272,11 @@ button,
 input,
 select,
 textarea {
-    color: black;
+    color: rgb(26, 26, 26);
     font-family: 'Fira Sans', sans-serif;
     font-size: 16px;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .site-content {
@@ -287,48 +287,50 @@ textarea {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
-    font-family: 'Junction';
+h4 {
+    font-family: 'Chelsea Market';
     clear: both;
-    line-height: 1.3em;
     margin-top: 2.5rem;
-    margin-bottom: 1rem;
 }
 
 h1 {
-    font-size: 2em;
-    color: #4a74a0;
+    font-size: 2.6em;
+    color: #5980a5;
+    margin-top: 4rem;
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 2.2em;
     color: #666b11;
+    line-height: 1.4em;
 }
 
 h3 {
-    font-size: 1.7em;
-    color: ##666b11;
+    font-size: 1.8em;
+    color: #666b11;
+    line-height: 1.3em;
 }
 
 h4 {
     font-size: 1.6em;
     color: #666b11;
+    line-height: 1.1em;
 }
 
 h5 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #222222;
 }
 
 h6 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #222222;
 }
 
 p {
     margin-bottom: 1.5em;
+    line-height: 1.8em;
+    ;
     color: rgb(34, 34, 34);
 }
 
@@ -596,10 +598,11 @@ a:active {
 
 .top-bar-main-container {
     margin: 0;
+    position: relative;
     width: 100%;
     height: 100px;
-    background-color: rgb(41, 41, 41);
-    box-shadow: 0 0 7px;
+    background-color: #6e9bcc;
+    box-shadow: 0 0 7px #496788;
 }
 
 .top-bar-container {
@@ -613,9 +616,9 @@ a:active {
 }
 
 #main-nav li a {
-    color: #cfd26e;
+    color: rgb(241, 248, 252);
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.6em;
     height: 60px;
     line-height: 45px;
     padding: 0 20px;
@@ -637,7 +640,7 @@ ul.sub-menu {
 @media screen and (min-width: 85.5em) {
     #main-nav {
         height: 100px;
-        background-color: rgb(41, 41, 41);
+        background-color: #6e9bcc;
         padding: 0;
         margin: 0;
         /* set to the height you want your menu to be */
@@ -660,9 +663,12 @@ ul.sub-menu {
         line-height: 100px;
         height: 100px;
     }
+    #main-nav li.menu-item-has-children>a:after {
+        content: ' +';
+    }
     /* First level sub menu */
     #main-nav ul ul {
-        background-color: #cfd26e;
+        background-color: #7eadda;
         /* this targets all sub menus */
         display: none;
         /* hide all sub menus from view */
@@ -673,12 +679,13 @@ ul.sub-menu {
     #main-nav .current_page_item a,
     #main-nav a:hover {
         color: #fff;
-        background: #868832;
+        background: #5980a5;
         text-decoration: underline;
     }
     #main-nav ul ul li {
         /* this targets all submenu items */
         float: none;
+        border-bottom: 1px solid #6e9bcc;
         /* overwriting our float up above */
         width: 250px;
         /* set to the width you want your sub menus to be. This needs to match the value we set below */
@@ -686,7 +693,7 @@ ul.sub-menu {
     #main-nav ul ul li a {
         height: 60px;
         line-height: 60px;
-        color: #666b11;
+        color: rgb(241, 248, 252);
         /* target all sub menu item links */
         padding: 0;
         text-transform: capitalize;
@@ -700,7 +707,7 @@ ul.sub-menu {
     }
     /* Second and third levels of sumbenus */
     #main-nav ul ul li ul {
-        background-color: #cfd26e;
+        background-color: #d7edff;
         /* target all second, third, and deeper level sub menus */
         left: 250px;
         /* this needs to match the sub menu width set above -- width + padding + borders */
@@ -730,12 +737,12 @@ ul.sub-menu {
         text-align: right;
     }
     #main-nav ul li a {
-        color: #ecf2d2;
+        color: #d7edff;
     }
     .menu-toggle,
     #main-nav.toggled ul {
         display: inline-block;
-        background-color: #868832;
+        background-color: #5980a5;
         width: 320px;
     }
     #main-nav ul {
@@ -743,17 +750,17 @@ ul.sub-menu {
     }
     #main-nav ul li {
         width: 320px;
-        background-color: #868832;
-        border-bottom: 1px solid #55590e;
+        background-color: #5980a5;
+        border-bottom: 1px solid #6e9bcc;
     }
     #main-nav ul ul {
         position: relative;
     }
     #main-nav ul ul li {
         display: inline-block;
-        background-color: #55590e;
+        background-color: #6e9bcc;
         padding-right: 25px;
-        border-bottom: 1px solid #868832;
+        border-bottom: 1px solid #5980a5;
     }
     #main-nav ul ul li a {
         text-transform: capitalize;
@@ -788,7 +795,7 @@ button.menu-toggle {
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #cfd26e;
+    background-color: #fff;
     margin: 6px 0;
     -webkit-transition: 0.4s;
     transition: 0.4s;

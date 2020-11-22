@@ -105,3 +105,15 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'cafeandbrewery';
+    src: url('cafeandbrewery/cafeandbrewery.eot');
+    src: url('cafeandbrewery/cafeandbrewery.woff') format('woff'), url('cafeandbrewery/cafeandbrewery.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('bebasneue/BebasNeue.eot');
+    src: url('bebasneue//BebasNeue.woff') format('woff'), url('/BebasNeue.ttf') format('truetype');
+}

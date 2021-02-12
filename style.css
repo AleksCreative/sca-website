@@ -621,6 +621,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
                 margin-top: 40px;
             }
             
+            #main-nav li.menu-item-has-children>a:after {
+                content: ' +';
+            }
+            
+            .plus {
+                display: none;
+            }
+            
             @media screen and (min-width: 85.5em) {
                 #main-nav {
                     height: 100px;
@@ -646,9 +654,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
                     display: block;
                     line-height: 100px;
                     height: 100px;
-                }
-                #main-nav li.menu-item-has-children>a:after {
-                    content: ' +';
                 }
                 /* First level sub menu */
                 #main-nav ul ul {
@@ -720,6 +725,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
             }
             
             @media screen and (max-width: 85.5em) {
+                #main-nav li.menu-item-has-children>a:after {
+                    content: '';
+                }
+                .plus {
+                    display: inline;
+                    color: #fff;
+                    padding: 10px;
+                    padding-right: 18px;
+                    font-size: 25px;
+                    font-weight: bold;
+                }
                 .top-bar-container {
                     justify-content: space-between;
                 }
@@ -744,8 +760,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
                     background-color: #5980a5;
                     border-bottom: 1px solid #6e9bcc;
                 }
-                #main-nav ul ul {
+                #main-nav.toggled ul ul {
                     position: relative;
+                    display: none;
+                }
+                #main-nav.toggled ul ul.show-submenu {
+                    display: block;
                 }
                 #main-nav ul ul li {
                     display: inline-block;

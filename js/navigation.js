@@ -113,3 +113,27 @@ function myFunction(x) {
 }
 
 /* Submenu dropdown on click */
+
+const primaryMenu = document.getElementById('primary-menu');
+const parents = document.getElementsByClassName('menu-parent-item');
+const parentsArray = Array.from(parents);
+
+parentsArray.forEach(function(parentA) {
+    parentA.innerHTML += '<span class="plus">+</span>';
+});
+
+
+
+
+
+
+primaryMenu.addEventListener('click', showUl);
+
+function showUl(e) {
+
+    if (e.target.classList.contains('plus')) {
+
+        e.target.parentElement.firstElementChild.nextElementSibling.classList.toggle('show-submenu');
+
+    }
+}

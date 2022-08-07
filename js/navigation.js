@@ -114,13 +114,36 @@ function myFunction(x) {
 
 /* Submenu dropdown on click */
 
-const primaryMenu = document.getElementById('primary-menu');
-const parents = document.getElementsByClassName('menu-parent-item');
-const parentsArray = Array.from(parents);
+var primaryMenu = document.getElementById('primary-menu');
+var parents = document.getElementsByClassName('menu-parent-item');
+ var subparents = document.getElementsByClassName('current-menu-item page_item current_page_item menu-item-has-children menu-parent-item')
+var parentsArray = Array.from(parents);
+ var subparentsArray = Array.from(subparents);
 
-parentsArray.forEach(function(parentA) {
+
+parentsArray[1].innerHTML += '<span class="plus">+</span>';
+
+ function addPlus() {
+
+    for (let i = 0; i < parentsArray.length; i++) {
+        parentsArray[i].innerHTML += '<span class="plus">+</span>';
+
+    }
+}
+addPlus();
+
+/* function addPlusTwo() {
+
+    for (let i = 0; i < subparentsArray.length; i++) {
+        subparentsArray[i].innerHTML += '<span class="plus">+</span>';
+
+    }
+}
+addPlusTwo(); */
+
+/*parentsArray.forEach(function(parentA) {
     parentA.innerHTML += '<span class="plus">+</span>';
-});
+});*/
 
 
 
@@ -137,3 +160,9 @@ function showUl(e) {
 
     }
 }
+/*
+menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-parent-item menu-item-744
+
+menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-184 current_page_item menu-item-has-children menu-parent-item menu-item-1220
+
+current-menu-item page_item current_page_item menu-item-has-children menu-parent-item*/

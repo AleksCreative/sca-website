@@ -10,9 +10,21 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<?php $featuredImg = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+<?php
+		if ( !is_front_page() && !is_home() ) : ?>
+		<div class="header-wrap" <?php echo 'style="background: url('. $featuredImg. '); background-repeat: no-repeat; background-position: center center; background-size: cover"' ?>>
+			<header class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</header><!-- .entry-header -->
+		</div>
+ <?php else : ?>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</header><!-- .entry-header -->
+		
+		<?php
+		endif; ?>	
 
 	<div class="entry-content">
 		<?php

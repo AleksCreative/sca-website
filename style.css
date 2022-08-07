@@ -637,7 +637,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
                 top: 20px;
                 background-color: #23456a;
                 border-radius: 10px;
+                margin-left: 10px;
             }
+
+            #main-nav ul.current-menu-item li:last-child > a,
+                #main-nav ul.current_page_item li:last-child > a,
+                #main-nav li:last-child > a:hover {
+                    text-decoration: underline;
+                }
             
             @media screen and (min-width: 85.5em) {
                 #main-nav {
@@ -674,13 +681,22 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
                     position: absolute;
                     /* this should be the same height as the top level menu -- height + padding + borders */
                 }
-                #main-nav ul.current-menu-item a,
-                #main-nav ul.current_page_item a,
-                #main-nav a:hover {
+                #main-nav ul.current-menu-item li > a,
+                #main-nav ul.current_page_item li > a,
+                #main-nav li > a:hover {
                     color: #fff;
                     background: #5980a5;
                     text-decoration: underline;
                 }
+
+                #main-nav ul.current-menu-item li:last-child > a,
+                #main-nav ul.current_page_item li:last-child > a,
+                #main-nav li:last-child > a:hover {
+                    text-decoration: underline;
+                    background: none;
+                    opacity: 0.9;
+                } 
+
                 #main-nav ul ul li {
                     /* this targets all submenu items */
                     float: none;
@@ -795,6 +811,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
                 }
                 #main-nav > ul > li:last-child {
                     border-radius: 0;
+                    margin-left: 0;
                 }
             }
             /* Menu button */

@@ -4,7 +4,7 @@ Theme URI: https://alekscreative.com/
 Author: AleksCreative
 Author URI: http://alekscreative.com
 Description: Theme for SCA
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: sca-website
@@ -284,7 +284,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
             h4 {
                 font-family: 'Chelsea Market';
                 clear: both;
-                margin-top: 2.5rem;
+                margin-top: 1rem;
             }
             
             h1 {
@@ -1300,3 +1300,38 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
             .gallery-caption {
                 display: block;
             }
+
+                
+/* #various style fixes */
+
+.searchandfilter select {
+	padding:10px;
+	margin-right: 10px;
+}
+.searchandfilter input {
+	padding: 15px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+	background: #666d1f;
+}
+
+.searchandfilter ul li {
+	margin: 8px;
+}
+
+.categories-list-news {
+	list-style: none;
+}
+.categories-list-news li {
+	margin-bottom: 10px;
+}
+.wp-block-latest-posts__list {
+    margin: 0;
+}
+.wp-block-latest-posts__list li {
+	padding-bottom: 30px;
+}
+.wp-block-latest-posts__post-title {
+	font-family: 'Chelsea Market';
+}

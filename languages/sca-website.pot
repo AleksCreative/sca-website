@@ -200,25 +200,25 @@ msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "_s"
+msgid "sca-website"
 msgstr ""
 
 #. Theme URI of the plugin/theme
 #@ _s
-msgid "http://underscores.me/"
+msgid "https://AleksCreative.com/"
 msgstr ""
 
 #. Description of the plugin/theme
 #@ _s
-msgid "Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for."
+msgid "Hi. I'm a theme for SCA"
 msgstr ""
 
 #. Author of the plugin/theme
 #@ _s
-msgid "Automattic"
+msgid "AleksCreative"
 msgstr ""
 
 #. Author URI of the plugin/theme
 #@ _s
-msgid "http://automattic.com/"
+msgid "https://AleksCreative.com/"
 msgstr ""

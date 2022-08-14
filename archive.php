@@ -26,13 +26,44 @@ get_header(); ?>
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
-
+			?>
+			<article id="post-<?php the_ID(); ?>" class="archive-entry" <?php post_class(); ?>>
+			<header class="entry-header">
+				<?php
+				if ( is_single() ) :
+					the_title( '<h5 class="entry-title archive-title">', '</h1>' );
+				else :
+					the_title( '<h5 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				endif;
+		
+				if ( 'post' === get_post_type() ) : ?>
+				<!-- <div class="entry-meta">
+					<?php // sca_website_posted_on(); ?>
+				</div> --><!-- .entry-meta -->
+				<?php
+				endif; ?>
+			</header><!-- .entry-header -->
+		
+			<div class="entry-content archive-content">
+				<?php
+					the_excerpt( sprintf(
+						/* translators: %s: Name of current post. */
+						wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'sca-website' ), array( 'span' => array( 'class' => array() ) ) ),
+						the_title( '<span class="screen-reader-text">"', '"</span>', false )
+					) );
+		
+					wp_link_pages( array(
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sca-website' ),
+						'after'  => '</div>',
+					) );
+				?>
+			</div><!-- .entry-content -->
+		
+			<!-- <footer class="entry-footer">
+				<?php sca_website_entry_footer(); ?>
+			</footer> --><!-- .entry-footer -->
+		</article><!-- #post-## -->
+						<?php
 			endwhile;
 
 			the_posts_navigation();

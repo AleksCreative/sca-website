@@ -4,7 +4,7 @@ Theme URI: https://alekscreative.com/
 Author: AleksCreative
 Author URI: http://alekscreative.com
 Description: Theme for SCA
-Version: 1.0.6
+Version: 1.0.7
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: sca-website
@@ -291,7 +291,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
                 font-size: 2.6em;
                 color: #5980a5;
                 margin-top: 4rem;
-                line-height: 1.1em;
+                line-height: 1.2em;
             }
             
             h2 {
@@ -309,7 +309,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
             h4 {
                 font-size: 1.6em;
                 color: #666b11;
-                line-height: 1.1em;
+                line-height: 1.2em;
             }
             
             h5 {
@@ -1067,7 +1067,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
             .site-main,
             .site-info {
                 margin: 1.4em;
-                font-size: .8em;
+                font-size: 1em;
                 line-height: 1.6em;
             }
             
@@ -1081,7 +1081,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
             @media screen and (min-width: 40em) {
                 .site-main,
                 .site-info {
-                    font-size: 1em;
+                    font-size: 1.2em;
                     margin: 1.6em;
                 }
             }

@@ -121,7 +121,7 @@ var parentsArray = Array.from(parents);
  var subparentsArray = Array.from(subparents);
 
 
-parentsArray[1].innerHTML += '<span class="plus">+</span>';
+// parentsArray[1].innerHTML += '<span class="plus">+</span>';
 
  function addPlus() {
 

@@ -1369,3 +1369,119 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 .wp-block-latest-posts__post-title {
 	font-family: 'Chelsea Market';
 }
+
+
+
+.newsletter-grid .uagb-columns__inner-wrap {
+	height: 60px;
+}
+
+.flex-form form  select,
+.flex-form form input{
+	height: 40px;
+	border-radius: 3px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .flex-form form input,
+	.flex-form form  select {
+   max-width: 300px;
+  }
+}
+
+
+
+.white-bgr {
+	background-color: #fff;
+	padding: 1px;
+}
+.white-link a{
+	color: #fff;
+	text-decoration: none;
+}
+.white-link a:hover {
+	text-decoration: underline;
+}
+
+.get-involved-home h4 a,
+.get-involved-page h5 a {
+	color: #273d53;
+	text-decoration: none;
+}
+
+.get-involved-home h4 a:hover,
+.get-involved-page h5 a:hover {
+	text-decoration: underline
+}
+
+input.form-button {
+	height: 60px!important;
+	color: #ffffff;
+  background: #23456a;
+  border-radius: 10px!important;
+  box-shadow: none;
+  cursor: pointer;
+	display: inline-block;
+    font-size: 1.125em;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+input.form-button:hover {
+	    background: rgba(35,69,106,0.8);
+}
+
+.latest-posts-widget,
+.ingredients {
+	font-size: 0.9em;
+	line-height: 1.6em;
+}
+
+.searchandfilter input, .form-group button {
+    padding: 15px;
+    padding-left: 30px;
+		padding-right: 30px;
+    font-weight: 300;
+    font-size: 18px;
+	border-radius: 10px;
+    color: #fff!important;
+    background: #23456A!important;
+}
+body .give-form-templates .give-container-unboxed {
+	justify-content: left!important;
+}
+
+.booking_form .form-group .controls select, .booking_form select, .booking_form textarea, .booking_form input[type="text"] {
+	width: 90%;
+}    
+
+.wpbc_structure_form {
+	padding-top: 30px;
+}
+
+.wpbc_structure_calendar {
+	padding: 20px;
+}
+
+select {
+	font-size: 18px;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+button.pbSubmit {
+	   padding: 15px;
+    padding-left: 30px;
+		padding-right: 30px;
+    font-weight: 300;
+    font-size: 18px;
+	border-radius: 5px;
+    color: #fff!important;
+    background-color: #23456A!important;
+}
+
+.home h1.entry-title {
+	margin-top: -20px;
+}
